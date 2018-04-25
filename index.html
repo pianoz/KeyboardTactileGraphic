@@ -1,0 +1,83 @@
+<DOCTYPE! html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+  <script type="text/javascript">
+  function intro1()
+  {
+    #responsiveVoice.speak("This is a tactile graphic designed to explain the breakdown of the US federal budget in 2017. To start, place your hands on the keyboard and hit keys to see what has the largest percent share.")
+  }
+  window.onload = intro1
+  </script>
+  <script type="text/javascript">
+  'use strict';
+  document.addEventListener('keydown', (event) => {
+    const key = event.keyCode;
+
+    if (key >= 65 && key <= 82)
+    {
+      var string="Social Security"
+      read(string)
+    }
+    if(key >= 48 && key <= 57)
+    {
+      var string="Medicare";
+      read(string);
+    }
+    if(key >= 83 && key <= 88)
+    {
+      var string="Medicare";
+      read(string);
+    }
+    if(key >= 89 && key <= 90)
+    {
+      var string = "Military";
+      read(string);
+    }
+    if(key >= 187 && key <=192)
+    {
+      var string = "Military";
+      read(string);
+    }
+    if(key == 8 || key == 9 || key == 32)
+    {
+      var string = "Interest on the national debt";
+      read(string);
+    }
+    if(key == 16){
+      var string ="Veterans Affairs";
+      read(string);
+    }
+    if(key == 219 || key == 220)
+    {
+      var string="Food and Agriculture"
+      read(string);
+    }
+    if(key == 221){
+      var string ="Education";
+      read(string);
+    }
+    if(key == 222){
+      var string ="Transportation";
+      read(string);
+    }
+    if(key == 20){
+      var string ="Housing, Community, and International Affairs";
+      read(string);
+    }
+    if(key == 13){
+      var string ="Science and other"
+      read(string);
+    }
+  });
+  function read(string1){
+    responsiveVoice.speak(string1);
+  }
+  </script>
+</head>
+<body>
+  <img class="onlyimage" src="USA.png">
+</body>
+
+</html>

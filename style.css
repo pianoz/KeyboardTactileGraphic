@@ -1,0 +1,10 @@
+body{
+  background-color: #565656
+}
+.onlyimage{
+  width:60%;
+  position: absolute;
+  right:20%;
+  top: 30%;
+
+}
